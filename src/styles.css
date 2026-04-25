@@ -1,4 +1,4 @@
-
+/* 
    :root {
   --bg: #1271cf;
   --card: #ffffff;
@@ -15,26 +15,26 @@ body {
   background: #f3f3f6;
 }
 /*FULL SCREEN*/
-.authPage{
+/* .authPage{
     height :100vh;
     display : flex;
     justify-content:center;
     align-items : center;
-}
+} */
 /* MAIN */
-.dashboard {
+/* .dashboard {
   max-width: 500px;
   margin: auto;
   padding: 20px;
   background: pink;
-}
+} */
 /* PAGE CENTER */
-.dashboardPage {
+/* .dashboardPage {
   min-height: 100vh;
   padding: 20px;
-}
+} */
 /* LOGIN CARD */
-.authCard {
+/* .authCard {
   width: 100%;
   max-width: 380px;
   background: white;
@@ -42,54 +42,54 @@ body {
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   text-align: center;
-}
+} */
 /* TOP BAR */
-.topbar {
+/* .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-}
+} */
 
 /* LOGOUT */
-.logoutBtn {
+/* .logoutBtn {
   background: black;
   color: rgb(234, 236, 222);
   border: none;
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-}
+} */
 /* PRIMARY LOGIN BUTTON */
-.authCard button:first-of-type {
+/* .authCard button:first-of-type {
   background: black;
   color: white;
-}
+} */
 
 /* GUEST BUTTON */
-.authCard button:nth-of-type(2) {
+/* .authCard button:nth-of-type(2) {
   background: #eee;
   color: black;
-}
+} */
 
 /* LINK */
-.link {
+/* .link {
   margin-top: 15px;
   color: blue;
   cursor: pointer;
   font-size: 14px;
-}
+} */
 /* TIMER CARD */
-.timerCard {
+/* .timerCard {
   background: rgb(216, 144, 80);
   padding: 15px;
   border-radius: 12px;
   margin-bottom: 15px;
   text-align: center;
-}
+} */
 
 /* INPUT */
-.authCard input {
+/* .authCard input {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -112,9 +112,9 @@ body {
   border: none;
   background: black;
   color: rgb(237, 224, 224);
-}
+} */
 /* BUTTONS */
-.authCard button {
+/* .authCard button {
   width: 100%;
   padding: 12px;
   margin-top: 10px;
@@ -122,36 +122,36 @@ body {
   border: none;
   cursor: pointer;
   font-weight: bold;
-}
+} */
 /* ACTIVITY LIST */
-.activityList {
+/* .activityList {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} */
 
 /* ACTIVITY CARD */
-.activityCard {
+/* .activityCard {
   background: rgb(251, 221, 155);
   padding: 12px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-}
+} */
 
 /* MAIN CARD */
-.dashboardCard {
+/* .dashboardCard {
   max-width: 500px;
   margin: auto;
   background: white;
   padding: 25px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
+} */
 
 /* TIMER */
-.timerBox {
+/* .timerBox {
   text-align: center;
   padding: 15px;
   border-radius: 12px;
@@ -162,10 +162,10 @@ body {
 .timeText {
   font-size: 24px;
   font-weight: bold;
-}
+} */
 
 /* INPUT ROW */
-.inputRow {
+/* .inputRow {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
@@ -184,17 +184,17 @@ body {
   border-radius: 10px;
   background: black;
   color: white;
-}
+} */
 
 /* ACTIVITY LIST */
-.activityList {
+/* .activityList {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} */
 
 /* ITEM */
-.activityItem {
+/* .activityItem {
   display: flex;
   justify-content: space-between;
   padding: 12px;
@@ -216,7 +216,7 @@ body {
   color: white;
   border-radius: 6px;
   padding: 4px 8px;
-}
+} */ */
 .levelUpPopup {
   position: fixed;
   top: 20px;
@@ -240,4 +240,122 @@ body {
     transform: translateX(-50%) scale(1);
     opacity: 1;
   }
+}
+:root {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --primary: #6366f1;
+  --secondary: #22c55e;
+  --text: #1e293b;
+  --subtext: #64748b;
+  --border: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+}
+
+/* CENTER PAGE */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* MAIN CARD */
+.card {
+  width: 380px;
+  padding: 25px;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.header p {
+  color: var(--subtext);
+  font-size: 14px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ACTIVITY LIST */
+.activity {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.activity:hover {
+  background: #c5c7d0;
+}
+
+/* TIMER */
+.timer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.timer h1 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+/* LOGOUT */
+.logout {
+  margin-top: 10px;
+  background: #ef4444;
+}
+button {
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.02);
 }

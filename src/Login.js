@@ -26,12 +26,16 @@ function Login() {
 };
 
 return (
-  <div className="authPage">
-    <div className="authCard">
+ 
+  <div className="wrapper">
+    <div className="card">
 
-      <h2>FOCUSSED MILES</h2>
+      <div className="header">
+        <h2>FocussedMiles </h2>
+        <p>WELCOME</p>
+        <p>Login to continue your focus journey</p>
+      </div>
 
-<p>WELCOME</p>
       <input
         placeholder="Email"
         onChange={(e) => setEmail(e.target.value.trim())}
@@ -45,17 +49,56 @@ return (
 
       <button onClick={handleLogin}>Login</button>
 
-      <button onClick={handleGuestLogin}>
-        Continue as Guest
-      </button>
+    <p style={{ marginTop: "10px", fontSize: "14px", textAlign: "center" }}>
+  Don’t have an account?{" "}
+  <span
+    style={{ color: "#6366f1", cursor: "pointer" }}
+    onClick={() => navigate("/signup")}
+  >
+    Sign up
+  </span>
+</p>
 
-      <p className="link" onClick={() => navigate("/signup")}>
-        Create an account
-      </p>
+<button
+  style={{ marginTop: "10px", background: "#22c55e" }}
+  onClick={handleGuestLogin}
+>
+  Continue as Guest
+</button>
 
     </div>
   </div>
 );
+//   <div className="authPage">
+//     <div className="authCard">
+
+//       <h2>FOCUSSED MILES</h2>
+
+// <p>WELCOME</p>
+//       <input
+//         placeholder="Email"
+//         onChange={(e) => setEmail(e.target.value.trim())}
+//       />
+
+//       <input
+//         type="password"
+//         placeholder="Password"
+//         onChange={(e) => setPassword(e.target.value)}
+//       />
+
+//       <button onClick={handleLogin}>Login</button>
+
+//       <button onClick={handleGuestLogin}>
+//         Continue as Guest
+//       </button>
+
+//       <p className="link" onClick={() => navigate("/signup")}>
+//         Create an account
+//       </p>
+
+//     </div>
+//   </div>
+
 }
 
 export default Login;
